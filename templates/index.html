@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="content">
+	<h1>Bienvenido a mi blog</h1>
+	
+</div>
+<h2 class='h1'>Articulos</h2>
+<div class="container">
+	<div class='container__div'>
+		<h2>Mecanica Cuantica</h2>
+		<img src="{{ url_for('static',filename='img/cuantica_1.jpg') }}" alt="">
+		<p>la mecanica cuantica es una rama de la fisica que estudia las particulas, moleculas y los elementos que los componen en resumen,la ciencia de <strong>lo mas pequeño</strong></p>
+		<p>y es un mundo que supera la ficcion ya nos encontramos con cosas que desafian el rasonamiento como superposiciones, un atomo estando en dos lugares al mismo tiempo ...</p>
+	</div>
+	<div class='container__div'>
+
+		<img src="{{ url_for('static',filename='img/python.png') }}" alt="">
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum minima temporibus magnam mollitia ut, voluptatibus doloribus omnis et rem! Harum beatae facilis reiciendis sit expedita corrupti nemo quos, distinctio ducimus?</p>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam earum illum assumenda blanditiis ratione deserunt minus totam expedita reiciendis sint vitae fugiat quibusdam recusandae, harum impedit omnis delectus aspernatur nesciunt!</p>
+	</div>
+	<div class='container__div'>
+
+		<img src="{{ url_for('static',filename='img/programming.jpg') }}" alt="">
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum minima temporibus magnam mollitia ut, voluptatibus doloribus omnis et rem! Harum beatae facilis reiciendis sit expedita corrupti nemo quos, distinctio ducimus?</p>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam earum illum assumenda blanditiis ratione deserunt minus totam expedita reiciendis sint vitae fugiat quibusdam recusandae, harum impedit omnis delectus aspernatur nesciunt!</p>
+	</div>
+</div>
+{% endblock %}
