@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="blog de programacion">
+    <meta name="description" content="un blog de tecnologia, programacion y mas">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static',filename='img/head.jpg') }}">
+    <title>{% block title %}{% endblock %} - programming and more</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="btn-menu"><img class="icon-menu" src="{{ url_for('static',filename='img/icon-menu.svg') }}" alt="icon-menu"></div>
+        <div class="dark-mode">
+            <i>dark mode</i>
+        </div>
+        
+    </div>
+        <ul class="menu-ul">
+            <li class="nav__li"><a href="#">Inicio</a></li>
+            <li class="nav__li"><a href="#">Articulos</a></li>
+            <li class="nav__li"><a href="#">Contacto</a></li>
+    </ul>
+    {% block content %} {% endblock %}
+    <script src="{{ url_for('static',filename='js/index.js') }}"></script>
+    <footer class="footer">
+        <ul>
+            <li>create by Jansel Roa &copy 2021</li>
+        </ul>
+    </footer>
+</body>
+</html>

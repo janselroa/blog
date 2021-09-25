@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<article class="content">
+    <div class="article__content">
+        <h1 class="title">Bienvenido</h1>
+        <p>programar es el futuro
+            quieres adaptarte y aprender
+            pero estas abrumado npor tantas obciones tantas tecnologias que aprender que no sabes que hacer aqui te podemos ayudar
+        </p>
+    </div>
+
+    <img src="{{ url_for('static',filename='img/head.jpg') }}" alt="">
+</article>
+<section class="section-articles">
+
+    <article class="section-articles__article">
+        <img src="{{ url_for('static',filename='img/python.png') }}" alt="python">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quos corporis ea voluptates eligendi animi totam laborum eveniet, aspernatur accusamus, temporibus beatae fugit sint delectus? Reiciendis architecto tempore atque corrupti?</p>
+    </article>
+    <article class="section-articles__article">
+        <img src="{{ url_for('static',filename='img/python.png') }}" alt="python">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quos corporis ea voluptates eligendi animi totam laborum eveniet, aspernatur accusamus, temporibus beatae fugit sint delectus? Reiciendis architecto tempore atque corrupti?</p>
+    </article>
+    <article class="section-articles__article">
+        <img src="{{ url_for('static',filename='img/python.png') }}" alt="python">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quos corporis ea voluptates eligendi animi totam laborum eveniet, aspernatur accusamus, temporibus beatae fugit sint delectus? Reiciendis architecto tempore atque corrupti?</p>
+    </article>
+    <article class="section-articles__article">
+        <img src="{{ url_for('static',filename='img/json_python.jpg') }}" alt="python">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quos corporis ea voluptates eligendi animi totam laborum eveniet, aspernatur accusamus, temporibus beatae fugit sint delectus? Reiciendis architecto tempore atque corrupti?</p>
+    </article>
+    <article class="section-articles__article">
+        <img src="{{ url_for('static',filename='img/emails.jpg') }}" alt="python">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quos corporis ea voluptates eligendi animi totam laborum eveniet, aspernatur accusamus, temporibus beatae fugit sint delectus? Reiciendis architecto tempore atque corrupti?</p>
+    </article>
+</section>
+<section>
+    <h1>mas recursos</h1>
+</section>
+
+{% endblock %}
