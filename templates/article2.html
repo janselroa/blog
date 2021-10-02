@@ -1,0 +1,64 @@
+{% extends "layout.html" %} {% block title %}curso python{% endblock %} {% block content %}
+<article class="articles">
+    <img src="{{ url_for('static',filename='img/python.jpg') }}" alt="python">
+    <p>python es un lenguaje de programacion moderno, rapido, muiltiproposito, es multiparadigma incluyendo programacion funcional, y oritentada a objetos
+    </p>
+    <ol class="article-temario">
+        <li><a href="#">instalacion</a></li>
+        <li><a href="#">Estructuras de datos</a>
+            <ul>
+                <li><a href="#">variables</a></li>
+                <li><a href="#">listas y tuplas</a></li>
+                <li><a href="#">diccionarios</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Esctructuras condiconales</a>
+            <ul>
+                <li><a href="#">condicionales</a></li>
+                <li><a href="#">bucles</a></li>
+            </ul>
+        </li>
+        <li><a href="#">programacion funcional Funciones</a>
+            <ul>
+                <li><a href="#">funciones</a></li>
+                <li><a href="#">funciones ononimas</a></li>
+                <li><a href="#">funciones map y filter</a></li>
+            </ul>
+        </li>
+    </ol>
+</article>
+
+<h2>mas articulos</h2>
+<aside class="aside">
+    <div class="aside-container">
+        <img src="{{ url_for('static',filename='img/python.jpg') }}" alt="python">
+        <p>python es un lenguaje de programacion moderno, rapido, muiltiproposito, es multiparadigma incluyendo programacion funcional, y oritentada a objetos
+        </p>
+        <a class="link" href="/articles/2">Saber mas</a>
+    </div>
+    <div class="aside-container">
+        <img src="{{ url_for('static',filename='img/python.jpg') }}" alt="python">
+        <p>python es un lenguaje de programacion moderno, rapido, muiltiproposito, es multiparadigma incluyendo programacion funcional, y oritentada a objetos
+        </p>
+        <a class="link" href="/articles/2">Saber mas</a>
+    </div>
+    <div class="aside-container">
+        <img src="{{ url_for('static',filename='img/python.jpg') }}" alt="python">
+        <p>python es un lenguaje de programacion moderno, rapido, muiltiproposito, es multiparadigma incluyendo programacion funcional, y oritentada a objetos
+        </p>
+        <a class="link" href="/articles/2">Saber mas</a>
+    </div>
+    <div class="aside-container">
+        <img src="{{ url_for('static',filename='img/python.jpg') }}" alt="python">
+        <p>python es un lenguaje de programacion moderno, rapido, muiltiproposito, es multiparadigma incluyendo programacion funcional, y oritentada a objetos
+        </p>
+        <a class="link" href="/articles/2">Saber mas</a>
+    </div>
+    <div class="aside-container">
+        <img src="{{ url_for('static',filename='img/python.jpg') }}" alt="python">
+        <p>python es un lenguaje de programacion moderno, rapido, muiltiproposito, es multiparadigma incluyendo programacion funcional, y oritentada a objetos
+        </p>
+        <a class="link" href="/articles/2">Saber mas</a>
+    </div>
+</aside>
+{% endblock %}

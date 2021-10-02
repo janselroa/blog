@@ -1,0 +1,13 @@
+.aside {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 20px;
+    justify-content: center;
+}
+
+.aside div {
+    flex-basis: 200px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}

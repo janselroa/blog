@@ -1,12 +1,8 @@
-{% extends "layout.html" %}
-{% block title %}Home{% endblock %}
-{% block content %}
+{% extends "layout.html" %} {% block title %}Home{% endblock %} {% block content %}
 <article class="content">
     <div class="article__content">
         <h1 class="title">Bienvenido</h1>
-        <p>programar es el futuro
-            quieres adaptarte y aprender
-            pero estas abrumado npor tantas obciones tantas tecnologias que aprender que no sabes que hacer aqui te podemos ayudar
+        <p>programar es el futuro quieres adaptarte y aprender pero estas abrumado por tantas obciones tantas tecnologias que aprender que no sabes que hacer aqui te podemos ayudar
         </p>
     </div>
 
@@ -15,24 +11,54 @@
 <section class="section-articles">
 
     <article class="section-articles__article">
-        <img src="{{ url_for('static',filename='img/python.png') }}" alt="python">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quos corporis ea voluptates eligendi animi totam laborum eveniet, aspernatur accusamus, temporibus beatae fugit sint delectus? Reiciendis architecto tempore atque corrupti?</p>
+        <img src="{{ url_for('static',filename='img/python.jpg') }}" alt="python">
+        <p>python es un lenguaje de programacion moderno, rapido, muiltiproposito, es multiparadigma incluyendo programacion funcional, y oritentada a objetos
+        </p>
+        <a class="link" href="/articles/2">Saber mas</a>
     </article>
     <article class="section-articles__article">
-        <img src="{{ url_for('static',filename='img/python.png') }}" alt="python">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quos corporis ea voluptates eligendi animi totam laborum eveniet, aspernatur accusamus, temporibus beatae fugit sint delectus? Reiciendis architecto tempore atque corrupti?</p>
+        <img src="{{ url_for('static',filename='img/powershell.jpg') }}" alt="powershell">
+        <p>Powersehell es un sistema de scripting de windows mediante linea de comandos, se usa normalmente para automatizar la administración de sistemas, interactuar con el sistema, También se usa para compilar, probar e implementar soluciones...
+        </p>
+        <a class="link" href="/articles/1">Saber mas</a>
     </article>
     <article class="section-articles__article">
-        <img src="{{ url_for('static',filename='img/python.png') }}" alt="python">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quos corporis ea voluptates eligendi animi totam laborum eveniet, aspernatur accusamus, temporibus beatae fugit sint delectus? Reiciendis architecto tempore atque corrupti?</p>
+        <img src="{{ url_for('static',filename='img/flask_email.jpg') }}" alt="flask-email">
+        <p>Una de las funciones más básicas en una aplicación web es la capacidad de enviar correos electrónicos a sus usuarios. La extensión Flask-Mail proporciona una interfaz sencilla para configurar SMTP con la aplicación
+            Flask y enviar mensajes desde sus vistas y scripts.
+        </p>
+        <a class="link" href="/articles/3">Saber mas</a>
     </article>
     <article class="section-articles__article">
         <img src="{{ url_for('static',filename='img/json_python.jpg') }}" alt="python">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quos corporis ea voluptates eligendi animi totam laborum eveniet, aspernatur accusamus, temporibus beatae fugit sint delectus? Reiciendis architecto tempore atque corrupti?</p>
+        <p>manipulacion de archivos externos y archivos json con python</p>
+        <a class="link" href="#">Saber mas</a>
+
     </article>
     <article class="section-articles__article">
         <img src="{{ url_for('static',filename='img/emails.jpg') }}" alt="python">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quos corporis ea voluptates eligendi animi totam laborum eveniet, aspernatur accusamus, temporibus beatae fugit sint delectus? Reiciendis architecto tempore atque corrupti?</p>
+        <a class="link" href="#">Saber mas</a>
+    </article>
+    <article class="section-articles__article">
+        <img src="{{ url_for('static',filename='img/conda.jpg') }}" alt="python anaconda conda">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quos corporis ea voluptates eligendi animi totam laborum eveniet, aspernatur accusamus, temporibus beatae fugit sint delectus? Reiciendis architecto tempore atque corrupti?</p>
+        <a class="link" href="#">Saber mas</a>
+    </article>
+    <article class="section-articles__article">
+        <img src="{{ url_for('static',filename='img/mult_background.jpg') }}" alt="blend-mode css">
+        <p>añadir multiples fondos con css</p>
+        <a class="link" href="#">Saber mas</a>
+    </article>
+    <article class="section-articles__article">
+        <img src="{{ url_for('static',filename='img/mult_background.jpg') }}" alt="blend-mode css">
+        <p>footer simpre devajo con css</p>
+        <a class="link" href="#">Saber mas</a>
+    </article>
+    <article class="section-articles__article">
+        <img src="{{ url_for('static',filename='img/pythonanywhwre.jpg') }}" alt="blend-mode css">
+        <p>subir app a pythonanywhwre gratis</p>
+        <a class="link" href="#">Saber mas</a>
     </article>
 </section>
 <section>

@@ -1,0 +1,74 @@
+{% extends "layout.html" %} {% block title %}powershell{% endblock %} {% block content %}
+
+<article class="article">
+    <h1>Powershell</h1>
+    <img src="{{ url_for('static',filename='img/powershell.jpg') }}" alt="powershell">
+    <p>Powersehell es un sistema de scripting de windows mediante linea de comandos, se usa normalmente para automatizar la administración de sistemas, interactuar con el sistema, También se usa para compilar, probar e implementar soluciones...
+    </p>
+
+    <ol class="article-temario">
+        <li><a href="#">configuracion</a></li>
+        <li><a href="#">Estructuras de datos</a>
+            <ul>
+                <li><a href="#">variables</a></li>
+                <li><a href="#">listas y tuplas</a></li>
+                <li><a href="#">diccionarios</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Esctructuras condiconales</a>
+            <ul>
+                <li><a href="#">condicionales</a></li>
+                <li><a href="#">bucles</a></li>
+            </ul>
+        </li>
+        <li><a href="#">programacion funcional Funciones</a>
+            <ul>
+                <li><a href="#">funciones</a></li>
+                <li><a href="#">funciones ononimas</a></li>
+                <li><a href="#">funciones map y filter</a></li>
+            </ul>
+        </li>
+    </ol>
+    <h2>configurar powershell</h2>
+    <p>powershell ya biene instalado por defecto en windows desde windows vista en adelante, powershell esta disonible actualizado en <a href="https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.1" target="_blank"
+            class="enlace">powershell</a></p>
+    <h2>Estructura de un comando en powershell</h2>
+    <p>un comando en powershell esta compueto por un verbo en singular un gion una o mas fraces ejemplo: get-childitem,get-process,etc..., verbo-frace estos comandos se conocen como cmdlet
+
+    </p>
+
+</article>
+<h2>mas articulos</h2>
+<aside class="aside">
+    <div class="aside-container">
+        <img src="{{ url_for('static',filename='img/python.jpg') }}" alt="python">
+        <p>python es un lenguaje de programacion moderno, rapido, muiltiproposito, es multiparadigma incluyendo programacion funcional, y oritentada a objetos
+        </p>
+        <a class="link" href="/articles/2">Saber mas</a>
+    </div>
+    <div class="aside-container">
+        <img src="{{ url_for('static',filename='img/python.jpg') }}" alt="python">
+        <p>python es un lenguaje de programacion moderno, rapido, muiltiproposito, es multiparadigma incluyendo programacion funcional, y oritentada a objetos
+        </p>
+        <a class="link" href="/articles/2">Saber mas</a>
+    </div>
+    <div class="aside-container">
+        <img src="{{ url_for('static',filename='img/python.jpg') }}" alt="python">
+        <p>python es un lenguaje de programacion moderno, rapido, muiltiproposito, es multiparadigma incluyendo programacion funcional, y oritentada a objetos
+        </p>
+        <a class="link" href="/articles/2">Saber mas</a>
+    </div>
+    <div class="aside-container">
+        <img src="{{ url_for('static',filename='img/python.jpg') }}" alt="python">
+        <p>python es un lenguaje de programacion moderno, rapido, muiltiproposito, es multiparadigma incluyendo programacion funcional, y oritentada a objetos
+        </p>
+        <a class="link" href="/articles/2">Saber mas</a>
+    </div>
+    <div class="aside-container">
+        <img src="{{ url_for('static',filename='img/python.jpg') }}" alt="python">
+        <p>python es un lenguaje de programacion moderno, rapido, muiltiproposito, es multiparadigma incluyendo programacion funcional, y oritentada a objetos
+        </p>
+        <a class="link" href="/articles/2">Saber mas</a>
+    </div>
+</aside>
+{% endblock %}

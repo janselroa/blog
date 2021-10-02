@@ -1,0 +1,15 @@
+{% extends "layout.html" %} {% block title %}flask mail{% endblock %} {% block content %}
+
+<h1>Flask mail</h1>
+<article class="article">
+
+    <img src="{{ url_for('static',filename='img/flask_email.jpg') }}" alt="flask-email">
+    <p>Una de las funciones más básicas en una aplicación web es la capacidad de enviar correos electrónicos a sus usuarios. La extensión Flask-Mail proporciona una interfaz sencilla para configurar SMTP con la aplicación Flask y enviar mensajes desde sus
+        vistas y scripts.
+    </p>
+    <p>primero tener instalado flask luego proceder a instalar flask-mail <pre class="command">pip install Flask-Mail</pre></p>
+    <p>y ahora vamos a configurar flask_email con un servidor flask </p>
+
+</article>
+
+{% endblock %}
